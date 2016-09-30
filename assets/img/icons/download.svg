@@ -1,0 +1,13 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.8 511.9">
+    <defs>
+        <style>.cls-1{fill:#fff;}</style>
+    </defs>
+    <title>ios7-download-outline</title>
+    <!--<path fill="inherit"-->
+          <!--d="M1745,1457V945.1h511.8V1457Zm96.2-64.36h319.52V1089.3h-127.4v15.83h111.33v271.51H1857.24V1104.94h111.39v-15.69h-127.4Zm86.38-184.35,73.61,73.61,73.14-73.14-12.2-12L2009,1249.91v-240.5H1992.6V1252l-54.25-54.34Z"-->
+          <!--transform="translate(-1745.04 -945.1)"/>-->
+    <path fill="inherit" d="M1841.24,1392.64V1089.25h127.4v15.69H1857.24v271.69h287.45V1105.13H2033.36V1089.3h127.4v303.34Z"
+          transform="translate(-1745.04 -945.1)"/>
+    <path fill="currentColor" d="M1927.62,1208.29l10.74-10.63L1992.6,1252v-242.6H2009v240.5l53.15-53.17,12.2,12-73.14,73.14Z"
+          transform="translate(-1745.04 -945.1)"/>
+</svg>
