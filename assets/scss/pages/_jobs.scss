@@ -1,0 +1,109 @@
+.table-section{
+    background: #fff;
+    padding:10px 20px;
+    text-align: center;
+    .table-header{
+        
+        .form-cont{
+            float: left;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            margin-bottom: 10px;
+            .filter-form{
+            border-radius: 3px;
+            box-shadow: none;
+            border:1px solid rgba(0,0,0,0.08);
+            
+            margin-bottom:10px;
+            margin-top: 10px;
+            padding-left: 10px;
+        } 
+        }
+        .refresh{
+            margin-top: 10px;
+            float:right;
+            .refresh-btn{
+            background: #188ecc;
+            padding:3px 8px;
+            
+            border-radius: 50px;
+            }
+            .fa{
+            
+            color:#fff;
+            }
+        }
+    }
+    tr{
+        
+        &:first-child{ td{
+            border-top: none !important;
+        }
+        }
+    }
+    .img-responsive{
+        width: 100px;
+    }
+    
+    h4{
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        color: rgba(0,0,0,0.6);
+    }
+    p{
+        font-size: 12px;
+    }
+    .badge-col,.btn-col{
+        padding:8px 0px;
+       
+    }
+    .task{
+        padding-right: 30px;
+        p{
+            font-weight: 600;
+            color: rgba(0,0,0,0.6);
+        }
+    }
+    .desc{
+        padding-right: 50px;
+    }
+    .badge{
+        border-radius: 3px;
+        margin-left: 3px;
+        &.grey{
+            background: #d6e0e5;
+            color: #666;
+        }
+        &.blue{
+            background: #188ecc;
+        }
+        &.orange{
+            background: #fbb564;
+        }
+        &.red{
+            background:#f0596f;
+        }
+    }
+    .btn-default{
+        margin-top: 0px;
+        border:1px solid rgba(0,0,0,0.08);
+        font-size: 12px;
+        text-transform: capitalize;
+        padding:2px 5px;
+        .fa{
+            margin-right: 5px;
+            color: #666;
+        }
+    }
+    
+}
+@media(max-width:1199px){
+    .table-section{
+       
+            .img-responsive{
+                width: 160px ;
+                margin-top: 10px;
+        }
+    }
+}

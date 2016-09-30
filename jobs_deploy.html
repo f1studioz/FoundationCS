@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Foundation CognitiveScale Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-material-design.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/ripples.min.css">
+    <script src="https://use.fontawesome.com/138450384e.js"></script>
+    <link type="text/css" href="assets/css/main.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 side-menu">
+                <ul class="sidebar-menu">
+                    <li class="header logo">
+                        <a href="#"><img src="assets/img/cs_logo_single.png"></a>
+                    </li>
+                    <li class="treeview active">
+                        <a href="#">
+                            <span class="fa sidebar-icons"><img class="svgImage" src="assets/img/icons/home.svg"></span><span>Home</span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa icon-dashboard"></i> <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa icon-apps"></i> <span>Cognitive Apps</span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa icon-compute"></i>
+                            <span>Compute</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu" style="display: none;">
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Notebooks</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Jobs</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Queues</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-laptop"></i>
+                            <span>Content & Storage</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu" style="display: none;">
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Virtual File System</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Data Repository</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-edit"></i> <span>Perception</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu" style="display: none;">
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Gladstone</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Topical</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-table"></i> <span>Decision Making</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Deep Graph </a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Deep Profile </a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Deep Insights </a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Deep Search </a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Deep Process </a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-table"></i> <span>Services</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Catalog </a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Stacks </a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-table"></i> <span>Visualization</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Concept Learning </a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Deep Cognitive Engine </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <div class="table-section">
+                   <div class="table-header">
+                      <div class="form-cont">
+                       <input type="text" class='filter-form' placeholder="filter">
+                       </div>
+                         
+                          <div class="refresh">
+                          <a href='#' data-toggle="tooltip" data-placement="left" title="" data-original-title="Create new job">
+                          <div class="refresh-btn">
+                           <i class="fa fa-refresh"></i>
+                           </div>
+                           </a>
+                           </div>
+                       
+                   </div>
+                    <table class="table">
+                        <tr>
+                        <td><img src='assets/img/talend-logo.png' class='img-responsive'></td>
+                        <td class="desc"><h4>EFSDemoJob</h4><p>57sds5852c5f5f258</p></td>
+                        <td class="badge-col"><p>Complete:<span class='badge grey'>5</span></p></td>
+                        <td class="badge-col"><p>Running:<span class='badge blue'>5</span></p></td>
+                        <td class="badge-col"><p>Queued:<span class='badge orange'>5</span></p></td>
+                        <td class="badge-col"><p>Error:<span class='badge red'>5</span></p></td>
+                        <td class="task"><p>0 tasks executed.</p></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-play'></i></span>Run</button></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-edit'></i></span>Update</button></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-trash'></i></span>Delete</button></td>
+                        </tr>
+                        <tr>
+                        <td><img src='assets/img/talend-logo.png' class='img-responsive'></td>
+                        <td class="desc"><h4>EFSDemoSample</h4><p>57sds5852c5f5f258</p></td>
+                        <td class="badge-col"><p>Complete:<span class='badge grey'>5</span></p></td>
+                        <td class="badge-col"><p>Running:<span class='badge blue'>5</span></p></td>
+                        <td class="badge-col"><p>Queued:<span class='badge orange'>5</span></p></td>
+                        <td class="badge-col"><p>Error:<span class='badge red'>5</span></p></td>
+                        <td class="task"><p>0 tasks executed.</p></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-play'></i></span>Run</button></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-edit'></i></span>Update</button></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-trash'></i></span>Delete</button></td>
+                        </tr>
+                        <tr>
+                        <td><img src='assets/img/talend-logo.png' class='img-responsive'></td>
+                        <td class="desc"><h4>JobSample</h4><p>57sds5852c5f5f258</p></td>
+                        <td class="badge-col"><p>Complete:<span class='badge grey'>5</span></p></td>
+                        <td class="badge-col"><p>Running:<span class='badge blue'>5</span></p></td>
+                        <td class="badge-col"><p>Queued:<span class='badge orange'>5</span></p></td>
+                        <td class="badge-col"><p>Error:<span class='badge red'>5</span></p></td>
+                        <td class="task"><p>0 tasks executed.</p></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-play'></i></span>Run</button></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-edit'></i></span>Update</button></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-trash'></i></span>Delete</button></td>
+                        </tr>
+                        <td><img src='assets/img/talend-logo.png' class='img-responsive'></td>
+                        <td class="desc"><h4>CompanyNews</h4><p>57sds5852c5f5f258</p></td>
+                        <td class="badge-col"><p>Complete:<span class='badge grey'>5</span></p></td>
+                        <td class="badge-col"><p>Running:<span class='badge blue'>5</span></p></td>
+                        <td class="badge-col"><p>Queued:<span class='badge orange'>5</span></p></td>
+                        <td class="badge-col"><p>Error:<span class='badge red'>5</span></p></td>
+                        <td class="task"><p>0 tasks executed.</p></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-play'></i></span>Run</button></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-edit'></i></span>Update</button></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-trash'></i></span>Delete</button></td>
+                        </tr>
+                        <tr>
+                        <td><img src='assets/img/talend-logo.png' class='img-responsive'></td>
+                        <td class="desc"><h4>JobSampleParams</h4><p>57sds5852c5f5f258</p></td>
+                        <td class="badge-col"><p>Complete:<span class='badge grey'>5</span></p></td>
+                        <td class="badge-col"><p>Running:<span class='badge blue'>5</span></p></td>
+                        <td class="badge-col"><p>Queued:<span class='badge orange'>5</span></p></td>
+                        <td class="badge-col"><p>Error:<span class='badge red'>5</span></p></td>
+                        <td class="task"><p>0 tasks executed.</p></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-play'></i></span>Run</button></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-edit'></i></span>Update</button></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-trash'></i></span>Delete</button></td>
+                        </tr>
+                        <tr>
+                        <td><img src='assets/img/docker-logo.png' class='img-responsive'></td>
+                        <td class="desc"><h4>IngestUser</h4><p>57sds5852c5f5f258</p></td>
+                        <td class="badge-col"><p>Complete:<span class='badge grey'>5</span></p></td>
+                        <td class="badge-col"><p>Running:<span class='badge blue'>5</span></p></td>
+                        <td class="badge-col"><p>Queued:<span class='badge orange'>5</span></p></td>
+                        <td class="badge-col"><p>Error:<span class='badge red'>5</span></p></td>
+                        <td class="task"><p>0 tasks executed.</p></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-play'></i></span>Run</button></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-edit'></i></span>Update</button></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-trash'></i></span>Delete</button></td>
+                        </tr>
+                        <tr>
+                        <td><img src='assets/img/docker-logo.png' class='img-responsive'></td>
+                        <td class="desc"><h4>User-data</h4><p>57sds5852c5f5f258</p></td>
+                        <td class="badge-col"><p>Complete:<span class='badge grey'>5</span></p></td>
+                        <td class="badge-col"><p>Running:<span class='badge blue'>5</span></p></td>
+                        <td class="badge-col"><p>Queued:<span class='badge orange'>5</span></p></td>
+                        <td class="badge-col"><p>Error:<span class='badge red'>5</span></p></td>
+                        <td class="task"><p>0 tasks executed.</p></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-play'></i></span>Run</button></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-edit'></i></span>Update</button></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-trash'></i></span>Delete</button></td>
+                        </tr>
+                        <tr>
+                        <td><img src='assets/img/docker-logo.png' class='img-responsive'></td>
+                        <td class="desc"><h4>User-data-demo</h4><p>57sds5852c5f5f258</p></td>
+                        <td class="badge-col"><p>Complete:<span class='badge grey'>5</span></p></td>
+                        <td class="badge-col"><p>Running:<span class='badge blue'>5</span></p></td>
+                        <td class="badge-col"><p>Queued:<span class='badge orange'>5</span></p></td>
+                        <td class="badge-col"><p>Error:<span class='badge red'>5</span></p></td>
+                        <td class="task"><p>0 tasks executed.</p></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-play'></i></span>Run</button></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-edit'></i></span>Update</button></td>
+                        <td class="btn-col"><button class="btn btn-default"><span><i class='fa fa-trash'></i></span>Delete</button></td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="assets/js/material.min.js"></script>
+    <script src="assets/js/ripples.min.js"></script>
+    <script src="assets/js/sidebar-menu.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <script type="text/javascript">
+         $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        $.material.init();
+    });
+  
+    $.sidebarMenu($('.sidebar-menu'));
+    </script>
+</body>
+
+</html>
